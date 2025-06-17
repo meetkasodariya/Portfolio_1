@@ -99,6 +99,37 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     
+
+    // Mobile menu toggle
+menuToggle.addEventListener('click', function() {
+    this.classList.toggle('active');
+    navMenu.classList.toggle('active');
+});
+
+// Close mobile menu when clicking a nav link
+navLinks.forEach(link => {
+    link.addEventListener('click', function() {
+        menuToggle.classList.remove('active');
+        navMenu.classList.remove('active');
+        
+        // Update active link
+        navLinks.forEach(item => item.classList.remove('active'));
+        this.classList.add('active');
+    });
+});
+
+// Sticky navbar on scroll
+window.addEventListener('scroll', function() {
+    if (window.scrollY > 100) {
+        navbar.classList.add('scrolled');
+    } else {
+        navbar.classList.remove('scrolled');
+    }
+});
+
+// Set current year in footer
+document.getElementById('year').textContent = new Date().getFullYear();
+
     // Back to top button
     const backToTop = document.getElementById('backToTop');
     window.addEventListener('scroll', function() {
