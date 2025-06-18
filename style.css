@@ -1741,7 +1741,6 @@ img {
         flex-direction: column;
         text-align: center;
         padding-top: 100px;
-
     }
     
     .stats-container {
@@ -1824,7 +1823,8 @@ img {
     .tech-stack {
         flex-direction: row;
         justify-content: center;
-       padding-bottom: 20px;
+       padding-bottom: 110px;
+       
     }
     
 }
@@ -1841,11 +1841,6 @@ img {
         flex-direction: column;
         gap: 30px;
         padding: 20px;
-    }
-    .tech-stack {
-        flex-direction: row;
-        justify-content: center;
-       padding-bottom: 20px;
     }
     
 }
