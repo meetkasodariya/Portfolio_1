@@ -1740,7 +1740,8 @@ img {
     .home-content {
         flex-direction: column;
         text-align: center;
-        /* padding-top: 100px; */
+        padding-top: 100px;
+
     }
     
     .stats-container {
